@@ -1,11 +1,10 @@
-/* eslint-disable no-undef */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/extensions */
 import outsideClick from './outsideclick.js';
 
 export default class DropdownMenu {
-  constructor(dropdownMenus) {
+  constructor(dropdownMenus, events) {
     this.dropdownMenus = document.querySelectorAll(dropdownMenus);
 
     // define touchstart e click como argumentos padrão de events caso o usuário não defina
